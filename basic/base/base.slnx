@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="base01/base01.vcxproj" />
+  <Project Path="base02/base02.vcxproj" />
+  <Project Path="base03/base03.vcxproj" />
+  <Project Path="base04/base04.vcxproj" />
+</Solution>
