@@ -3,7 +3,12 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="conversioncstructor/conversioncstructor.vcxproj" Id="525f9ad2-4383-42d1-b5b8-19a44d9d9bc9" />
   <Project Path="copy/copy.vcxproj" Id="effaef57-0e38-461f-b4e3-35744a272a9c" />
+  <Project Path="FileName/FileName.vcxproj" Id="e5891ac8-d265-4dc9-a934-073230ed5436" />
   <Project Path="init02/init02.vcxproj" Id="0f21afa0-4386-4a0f-951d-497aff997f33" />
+  <Project Path="moveconstructor/moveconstructor.vcxproj" Id="413707c2-9605-45e6-9b77-7f432562b651" />
+  <Project Path="MyClass/MyClass.vcxproj" Id="64d7c730-7730-4b00-909f-21de6795d346" />
   <Project Path="new01/new01.vcxproj" Id="13e2ebce-69f3-45b1-9b76-1bd9d6e8ccb6" />
+  <Project Path="rvalue/rvalue.vcxproj" Id="e4c4b6ec-285d-4b89-869b-93cb9c340d07" />
 </Solution>
