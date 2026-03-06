@@ -4,7 +4,7 @@ iot개발자 과정 c++리포지토리
 ### C++버전
 
 ## 1일차
-1. 입출력 방식(iostream)
+1. 입출력 방식(iostream)[소스](./basic/base/base02/base02.cpp)
 C++은 printf, scanf대신 iostream 헤더를 사용한 새로운 입출력방식을 제공합니다.
 - 입출력: std::cin, std::cout 사용 (서식 지정자 불필요, std::endl 개행).
 - 특징: C언어와 달리 별도의 서식 지정(%d, %df등)이 불필요하며, 데이터의 유형에 따라 적절한 입출력이 자동으로 이루어진다.
@@ -172,7 +172,7 @@ C++에서 char 배열로 문자열을 다룰 때 주의해야 할 핵심 사항�
 
 - 형태: ClassName(ClassName&& other) noexcept
 
-특징:
+## 특징:
 
 - std::move()를 통해 호출되며, 대용량 데이터를 가진 객체에서 불필요한 메모리 할당/복사를 줄여 성능을 극대화합니다.
 
@@ -189,3 +189,79 @@ C++에서 char 배열로 문자열을 다룰 때 주의해야 할 핵심 사항�
 - 주의사항 (explicit):
 - 의도치 않은 자동 형변환이 버그를 유발할 수 있습니다.
 - 이를 막으려면 생성자 앞에 explicit 키워드를 붙여 명시적 호출만 허용하도록 설정합니다.
+
+## 5일차 
+
+- 절차형 패러다임 + 객체 지향 패러다임
+
+ bool, char, int, long , double
+
+- Programing Language
+
+- 프로그래밍 언어의 schema
+
+- input -> precessing -> output
+1. operater: 연산
+2. condition: 조건
+3. Loop: 반복
+
+bariable
+
+. type
+. void
+. string
+
+- 자료형
+![alt text](image-1.png)
+
+1. 변수와 자료형 (Variables & Types)
+데이터를 저장하는 방식과 컴퓨터가 숫자를 처리하는 한계를 학습했습니다.
+
+네임스페이스(Namespace): A::printAll(), B::printAll()처럼 이름 충돌을 방지하기 위해 구역을 나눕니다.
+
+형변환(Casting): * 암묵적 형변환: double + int 시 자동으로 큰 자료형으로 변환.
+
+명시적 형변환: static_cast<int>(variable)를 사용하여 개발자가 직접 변환.
+
+오버플로우(Overflow): 자료형이 담을 수 있는 최대치를 넘으면 inf(무한대)나 예상치 못한 값이 출력됩니다.
+
+2. 연산자와 출력 조정자 (Operators & I/O Manipulators)
+데이터를 가공하고 보기 좋게 출력하는 방법을 익혔습니다.
+
+복합 대입 연산자: n4 += n3 *= 40와 같이 오른쪽에서 왼쪽으로 연산되는 우선순위를 확인했습니다.
+
+진법 출력: hex(16진수), dec(10진수), oct(8진수) 및 bitset을 이용한 2진수 출력.
+
+포맷팅: boolalpha(true/false 출력), setw()(출력 칸수 지정), showbase(진법 접두사 표시).
+
+3. 조건문 (Conditional Statements)
+상황에 따라 프로그램의 흐름을 바꾸는 방법을 비교 학습했습니다.
+
+if-else 문: &&(AND), ||(OR) 논리 연산자를 사용하여 넓은 범위를 체크할 때 유리합니다.
+
+switch-case 문: 정해진 값(정수, 문자)에 따라 분기하며, break를 통해 흐름을 제어합니다.
+
+4. 반복문과 흐름 제어 (Loops & Control)
+중첩 반복문과 루프 내에서의 세밀한 제어를 실습했습니다.
+
+중첩 for문: 구구단 예제를 통해 "단 - 줄 - 칸"의 3중 구조로 데이터를 배치하는 법을 배웠습니다.
+
+while(true) 무한 루프: 특정 조건이 충돌할 때까지 반복하며 break로 탈출합니다.
+
+break vs continue: * break: 반복문을 즉시 종료.
+
+continue: 현재 차례만 건너뛰고 다음 반복으로 진행.
+
+5. 시간 제어 및 애니메이션 (Time & UI)
+콘솔 창에서 정적인 출력을 넘어 동적인 효과를 주는 법을 배웠습니다.
+
+this_thread::sleep_for: 프로그램을 지정된 시간(초, 밀리초) 동안 멈춥니다.
+
+\r (Carriage Return): 커서를 줄 맨 앞으로 보내 기존 출력을 덮어쓰는 '카운트다운' 효과를 구현했습니다.
+
+6. 함수와 값 전달 (Function & Pass by Value)
+함수의 정의와 데이터가 전달되는 방식을 이해했습니다.
+
+값에 의한 전달 (Pass by Value): 함수에 인자를 전달할 때 복사본이 넘어가므로, 함수 내부에서 매개변수를 수정해도 main의 원본 변수에는 영향을 주지 않습니다.
+
+함수 프로토타입: 함수를 사용하기 전 상단에 미리 선언하여 컴파일 에러를 방지합니다.
