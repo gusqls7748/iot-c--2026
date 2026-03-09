@@ -151,12 +151,12 @@ C++에서 char 배열로 문자열을 다룰 때 주의해야 할 핵심 사항�
 - 깊은 복사 [소스](./basic/base03/copy/copy03.cpp) 
 - 포인터가 가리키는 실제 데이터를 위한 `새로운 메모리 공간을 할당(new)`하고 내용을 복사합니다. 객체 간의 독립성이 보장됩니다.
 
-4. 소멸자 (Destructor)
+4. 소멸자 (Destructor) [소스](./basic/base03/copy/copy2.cpp)
 - 역할: 객체가 수명을 다하고 사라질 때 자동으로 호출되어 메모리 해제 등 뒷정리를 담당합니다.
 
 - 특징: ~클래스명() 형태로 정의하며, 생성된 역순으로 호출됩니다. 동적 할당한 자원(new)은 여기서 delete 해줘야 메모리 누수를 방지할 수 있습니다.
 
-5. const 객체와 멤버 함수 오버로딩
+5. const 객체와 멤버 함수 오버로딩 [소스](./basic/base03/)
 - const 멤버 함수: 함수 내부에서 멤버 변수의 값을 변경하지 않음을 보장합니다. void Func() const; 형태로 선언합니다.
 
 - 호출 규칙:
@@ -214,7 +214,7 @@ bariable
 - 자료형
 ![alt text](image-1.png)
 
-1. 변수와 자료형 (Variables & Types)
+1. 변수와 자료형 (Variables & Types) [소스](./spaceCpp/chap01/Basic/01_variable.cpp)
 데이터를 저장하는 방식과 컴퓨터가 숫자를 처리하는 한계를 학습했습니다.
 
 네임스페이스(Namespace): A::printAll(), B::printAll()처럼 이름 충돌을 방지하기 위해 구역을 나눕니다.
@@ -223,10 +223,9 @@ bariable
 
 명시적 형변환: static_cast<int>(variable)를 사용하여 개발자가 직접 변환.
 
-오버플로우(Overflow): 자료형이 담을 수 있는 최대치를 넘으면 inf(무한대)나 예상치 못한 값이 출력됩니다.
+오버플로우(Overflow): 자료형이 담을 수 있는 최대치를 넘으면 inf(무한대)나 예상치 못한 값이 출력됩니다. [소스](./spaceCpp/chap01/Basic/02_casting.cpp)
 
-2. 연산자와 출력 조정자 (Operators & I/O Manipulators)
-데이터를 가공하고 보기 좋게 출력하는 방법을 익혔습니다.
+2. 연산자와 출력 조정자 (Operators & I/O Manipulators) [소스](./spaceCpp/chap01/Basic2/03_operator.cpp)
 
 복합 대입 연산자: n4 += n3 *= 40와 같이 오른쪽에서 왼쪽으로 연산되는 우선순위를 확인했습니다.
 
@@ -234,7 +233,7 @@ bariable
 
 포맷팅: boolalpha(true/false 출력), setw()(출력 칸수 지정), showbase(진법 접두사 표시).
 
-3. 조건문 (Conditional Statements)
+3. 조건문 (Conditional Statements) [소스](./spaceCpp/chap01/Basic2/04_condition.cpp)
 상황에 따라 프로그램의 흐름을 바꾸는 방법을 비교 학습했습니다.
 
 if-else 문: &&(AND), ||(OR) 논리 연산자를 사용하여 넓은 범위를 체크할 때 유리합니다.
@@ -244,22 +243,22 @@ switch-case 문: 정해진 값(정수, 문자)에 따라 분기하며, break를 
 4. 반복문과 흐름 제어 (Loops & Control)
 중첩 반복문과 루프 내에서의 세밀한 제어를 실습했습니다.
 
-중첩 for문: 구구단 예제를 통해 "단 - 줄 - 칸"의 3중 구조로 데이터를 배치하는 법을 배웠습니다.
+중첩 for문: 구구단 예제를 통해 "단 - 줄 - 칸"의 3중 구조로 데이터를 배치하는 법을 배웠습니다. [소스](./spaceCpp/chap01/Basic2/05_for.cpp)
 
-while(true) 무한 루프: 특정 조건이 충돌할 때까지 반복하며 break로 탈출합니다.
+while(true) 무한 루프: 특정 조건이 충돌할 때까지 반복하며 break로 탈출합니다.[소스](./spaceCpp/chap01/Basic2/06_while.cpp)
 
-break vs continue: * break: 반복문을 즉시 종료.
+break vs continue: * break: 반복문을 즉시 종료.[소스](./spaceCpp/chap01/Basic2/07_break_continue.cpp)
 
 continue: 현재 차례만 건너뛰고 다음 반복으로 진행.
 
-5. 시간 제어 및 애니메이션 (Time & UI)
+5. 시간 제어 및 애니메이션 (Time & UI)[소스](./spaceCpp/chap01/Basic2/08_function_library.cpp)
 콘솔 창에서 정적인 출력을 넘어 동적인 효과를 주는 법을 배웠습니다.
 
 this_thread::sleep_for: 프로그램을 지정된 시간(초, 밀리초) 동안 멈춥니다.
 
 \r (Carriage Return): 커서를 줄 맨 앞으로 보내 기존 출력을 덮어쓰는 '카운트다운' 효과를 구현했습니다.
 
-6. 함수와 값 전달 (Function & Pass by Value)
+6. 함수와 값 전달 (Function & Pass by Value)[소스](./spaceCpp/chap01/Basic2/09_funtion_args1.cpp)
 함수의 정의와 데이터가 전달되는 방식을 이해했습니다.
 
 값에 의한 전달 (Pass by Value): 함수에 인자를 전달할 때 복사본이 넘어가므로, 함수 내부에서 매개변수를 수정해도 main의 원본 변수에는 영향을 주지 않습니다.
