@@ -380,3 +380,39 @@ C++은 강력한 표준 라이브러리를 통해 수학, 문자 처리, 난수 
 
 재미로 만든 로또 예측 게임
 [소스](./spaceCpp/chap01/Basic2/14_Game.cpp)
+
+## 7일차 ##
+
+### 객체 지향 설계를 활용한 수강 신청 시스템 구현
+
+1. 클래스 간 상호작용 및 중재자 패턴 (Mediator Pattern)
+여러 클래스가 복잡하게 얽히는 상황에서 객체 간의 통신을 효율적으로 관리하는 구조를 학습했습니다.
+
+- Registrar (중재자): 학생(Student)과 과목(Course) 객체를 직접 연결하지 않고, Registrar 클래스의 enroll 함수를 통해 수강 등록 로직을 중앙에서 제어합니다.
+
+- 상호 업데이트: enroll 함수가 호출되면 과목의 수강생 명단(CourseRoster)과 학생의 시간표(StudentSchedule)가 동시에 업데이트됩니다.
+
+2. 동적 메모리 관리와 메모리 안전성 (Memory Safety)
+포인터 멤버 변수를 가진 클래스에서 메모리를 할당하고 해제하는 생명 주기를 관리했습니다.
+
+- 동적 할당: StudentSchedule과 CourseRoster 생성 시 new 연산자를 사용하여 실행 중에 필요한 메모리(문자열 배열)를 할당합니다.
+
+- 자원 해제: 소멸자(~)에서 delete[]를 사용하여 할당된 메모리를 반환함으로써 메모리 누수를 방지합니다.
+
+3. 프로젝트 모듈화 및 분할 컴파일
+코드의 유지보수성을 높이기 위해 인터페이스(.h)와 구현(.cpp)을 엄격히 분리했습니다.
+
+- 시스템 구성 파일:
+
+학생 관리: student.h, student.cpp, studentSchedule.h, studentSchedule.cpp
+
+과목 관리: course.h, course.cpp, courseRoster.h, courseRoster.cpp
+
+수강 등록 제어: registrar.h, registrar.cpp
+
+실행부: app.cpp (전체 시스템 인스턴스화 및 테스트)
+
+## 8일차 ##
+- 
+
+

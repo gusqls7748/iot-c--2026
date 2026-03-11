@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e8cb901e-680d-402e-8661-3265a4aefd5a}</ProjectGuid>
-    <RootNamespace>birthday</RootNamespace>
+    <ProjectGuid>{a6ddfbc2-ee79-4ed9-a7d5-dbf2b2e430e2}</ProjectGuid>
+    <RootNamespace>ArrayEx</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,16 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="applegame.cpp" />
-    <ClCompile Include="birthday.cpp">
+    <ClCompile Include="01_array.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="game.cpp">
+    <ClCompile Include="02_array.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="member.cpp">
+    <ClCompile Include="03_array2d.cpp" />
+    <ClCompile Include="ArrayEx.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="arrUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arrUtil.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

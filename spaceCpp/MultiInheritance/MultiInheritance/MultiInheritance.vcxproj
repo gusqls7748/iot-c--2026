@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e8cb901e-680d-402e-8661-3265a4aefd5a}</ProjectGuid>
-    <RootNamespace>birthday</RootNamespace>
+    <ProjectGuid>{f2b4db16-fe29-4e3f-b0c2-a0e0a6824c47}</ProjectGuid>
+    <RootNamespace>MultiInheritance</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,16 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="applegame.cpp" />
-    <ClCompile Include="birthday.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="game.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="member.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClInclude Include="person.h" />
+    <ClInclude Include="professor.h" />
+    <ClInclude Include="student.h" />
+    <ClInclude Include="ta.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app.cpp" />
+    <ClCompile Include="person.cpp" />
+    <ClCompile Include="professor.cpp" />
+    <ClCompile Include="student.cpp" />
+    <ClCompile Include="ta.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,17 +15,40 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="birthday.cpp">
+    <ClCompile Include="courseRoster.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="game.cpp">
+    <ClCompile Include="course.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="member.cpp">
+    <ClCompile Include="studentSchedule.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="applegame.cpp">
+    <ClCompile Include="student.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="registrar.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="app.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="courseRoster.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="course.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="studentSchedule.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="student.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="registrar.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

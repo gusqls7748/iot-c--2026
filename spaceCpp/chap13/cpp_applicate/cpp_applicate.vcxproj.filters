@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="birthday.cpp">
+    <ClCompile Include="cpp_applicate.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="game.cpp">
+    <ClCompile Include="exception01.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="member.cpp">
+    <ClCompile Include="exception02.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="applegame.cpp">
+    <ClCompile Include="exception03.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
