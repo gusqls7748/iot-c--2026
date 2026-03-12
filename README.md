@@ -425,8 +425,66 @@ C++은 강력한 표준 라이브러리를 통해 수학, 문자 처리, 난수 
 
 ## 8일차 ##
 
-- 벡터(vector)
+- 학습 핵심 요약 (교재 기반 완벽 정리)
 
+1. 프로그래밍 패러다임의 변화
+C++은 단순한 언어 확장이 아닌, 두 가지 중요한 패러다임의 결합입니다.
 
+- 절차형 패러다임: 순차적인 실행과 함수 중심의 설계.
 
+- 객체 지향 패러다임 (OOP): 데이터와 기능을 하나의 '객체'로 묶어 관리하는 설계.
 
+2. C++ 자료형 및 데이터 처리 (Variable & Schema)
+프로그램의 기본은 Input → Processing → Output의 흐름을 이해하는 것입니다.
+
+- 자료형(Type): bool(1byte), char(1byte), int(4byte), double(8byte) 등 데이터 성격에 맞는 메모리 할당.
+
+- 연산(Operator), 조건(Condition), 반복(Loop): 로직을 구성하는 3대 요소.
+
+- 형변환(Casting): 데이터 타입을 강제로 변환할 때 사용하는 static_cast<type>(val).
+
+3. 메모리 구조와 변수의 생명주기 (Memory Layout)
+효율적인 자원 관리를 위해 메모리 영역의 특성을 이해해야 합니다.
+
+(1). Code 영역: 실행할 프로그램의 기계어 명령 저장.
+
+(2). Data 영역: 전역 변수, 정적(static) 변수 저장 (프로그램 종료 시 소멸).
+
+(3). Stack 영역: 지역 변수, 매개변수 저장 (함수 종료 시 자동 소멸).
+
+(4). Heap 영역: 사용자 정의 동적 할당 영역 (new로 할당, delete로 해제).
+
+4. 객체 지향의 3대 특징
+교재에서 강조하는 클래스 설계의 핵심 원칙입니다.
+
+- 캡슐화 (Encapsulation): 멤버 변수를 private으로 숨기고 외부 접근을 제한하여 데이터 무결성 보장.
+
+- 상속 (Inheritance): 기존 클래스의 기능을 물려받아 재사용 및 확장.
+
+- 다형성 (Polymorphism): 오버로딩(Overloading)과 오버라이딩(Overriding)을 통해 하나의 인터페이스로 다양한 동작 수행.
+
+5. 제네릭(Generic) & STL (핵심 중의 핵심)
+데이터 타입에 종속되지 않는 범용적인 코드 작성을 가능하게 합니다.
+
+- 템플릿(Template): 함수나 클래스를 찍어내는 '틀'. template <typename T>를 사용.
+
+- STL (Standard Template Library):
+
+- Container: 데이터를 저장하는 구조 (vector, list, stack, queue, map 등).
+
+- Algorithm: 데이터를 처리하는 함수 (sort, find 등).
+
+- Iterator: 컨테이너 요소에 접근하기 위한 포인터 객체.
+
+6. 입출력 스트림 (I/O Stream)
+- 표준 입출력: cin, cout.
+
+- 파일 입출력:
+
+    - ifstream: 파일로부터 데이터 읽기 (Input).
+
+    - ofstream: 파일에 데이터 쓰기 (Output).
+
+    - fstream: 읽기와 쓰기 모두 지원.
+
+- 테스트 [소스](./spaceCpp/evaluation/test/memMng_gus.cpp)
