@@ -14,7 +14,7 @@ int main() {
 	initArr(arr4);
 	printArr(arr4);
 
-	shuffleArr(arr4);
+	//shuffleArr(arr4);
 	printArr(arr4);
 
 	return 0;
