@@ -1,37 +1,37 @@
 /**************************************************************
- * Course Å¬·¡½ºÀÇ ±¸Çö ÆÄÀÏ                                  *
+ * Course í´ë˜ìŠ¤ì˜ êµ¬í˜„ íŒŒì¼                                  *
  **************************************************************/
 #include "course.h"
 
- // »ı¼ºÀÚ
+ // ìƒì„±ì
 Course::Course(string nm, int ut)
 	: name(nm), units(ut)
 {
 	roster = new CourseRoster;
 }
-// ¼Ò¸êÀÚ
+// ì†Œë©¸ì
 Course::~Course()
 {
 }
-// getName ÇÔ¼öÀÇ Á¤ÀÇ
+// getName í•¨ìˆ˜ì˜ ì •ì˜
 string Course::getName() const
 {
 	return name;
 }
-// addStudent ÇÔ¼öÀÇ Á¤ÀÇ
+// addStudent í•¨ìˆ˜ì˜ ì •ì˜
 void Course::addStudent(string name)
 {
 	roster->addStudent(name);
 }
-// getRoster ÇÔ¼öÀÇ Á¤ÀÇ
+// getRoster í•¨ìˆ˜ì˜ ì •ì˜
 CourseRoster* Course::getRoster() const
 {
 	return roster;
 }
-// print ÇÔ¼öÀÇ Á¤ÀÇ
+// print í•¨ìˆ˜ì˜ ì •ì˜
 void Course::print() const
 {
-	cout << "ÄÚ½º ÀÌ¸§: " << name << endl;
-	cout << "°ú¸ñÀÇ ÇĞÁ¡: " << units << endl;
+	cout << "ì½”ìŠ¤ ì´ë¦„: " << name << endl;
+	cout << "ê³¼ëª©ì˜ í•™ì : " << units << endl;
 	roster->print();
 }

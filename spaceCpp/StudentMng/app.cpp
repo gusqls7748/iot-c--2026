@@ -1,31 +1,31 @@
 /**************************************************************
- * ¸ğµç Å¬·¡½º¸¦ »ç¿ëÇÏ´Â ¾ÖÇÃ¸®ÄÉÀÌ¼Ç ÆÄÀÏ                   *
+ * ëª¨ë“  í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í•˜ëŠ” ì• í”Œë¦¬ì¼€ì´ì…˜ íŒŒì¼                   *
  **************************************************************/
 #include "registrar.h"
 
 int main()
 {
-	// Registrar °´Ã¼ ÀÎ½ºÅÏ½ºÈ­
+	// Registrar ê°ì²´ ì¸ìŠ¤í„´ìŠ¤í™”
 	Registrar registrar;
-	// Student °´Ã¼ ÀÎ½ºÅÏ½ºÈ­
+	// Student ê°ì²´ ì¸ìŠ¤í„´ìŠ¤í™”
 	Student student1("John");
 	Student student2("Mary");
 	Student student3("Ann");
-	// Course °´Ã¼ 3°³ ÀÎ½ºÅÏ½ºÈ­
+	// Course ê°ì²´ 3ê°œ ì¸ìŠ¤í„´ìŠ¤í™”
 	Course course1("CIS101", 4);
 	Course course2("CIS102", 3);
 	Course course3("CIS103", 3);
-	// Registrar °´Ã¼¸¦ ±â¹İÀ¸·Î ÇĞ»ıÀÌ °ú¸ñ ¼ö°­ µî·Ï
+	// Registrar ê°ì²´ë¥¼ ê¸°ë°˜ìœ¼ë¡œ í•™ìƒì´ ê³¼ëª© ìˆ˜ê°• ë“±ë¡
 	registrar.enroll(student1, course1);
 	registrar.enroll(student1, course2);
 	registrar.enroll(student2, course1);
 	registrar.enroll(student2, course3);
 	registrar.enroll(student3, course1);
-	// Student °´Ã¼ÀÇ Á¤º¸ Ãâ·Â
+	// Student ê°ì²´ì˜ ì •ë³´ ì¶œë ¥
 	student1.print();
 	student2.print();
 	student3.print();
-	// Course °´Ã¼ÀÇ Á¤º¸ Ãâ·Â
+	// Course ê°ì²´ì˜ ì •ë³´ ì¶œë ¥
 	course1.print();
 	course2.print();
 	course3.print();

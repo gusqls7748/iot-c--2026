@@ -1,36 +1,38 @@
 /**************************************************************
- * Student Ŭ������ ���� ����                                 *
+ * Student 클래스의 구현 파일                                 *
  **************************************************************/
 #include "student.h"
 
- // ������
+ // 생성자
 Student::Student(string nm)
 	:name(nm)
 {
 	schedule = new StudentSchedule;
 }
-// �Ҹ���
+// 소멸자
 Student::~Student()
 {
+    // 주의: 생성자에서 new를 사용했으므로 
+    // 여기서 delete schedule; 코드가 필요해 보입니다.
 }
-// getName �Լ��� ����
+// getName 함수의 정의
 string Student::getName() const
 {
 	return name;
 }
-// getSchedule �Լ��� ����
+// getSchedule 함수의 정의
 StudentSchedule* Student::getSchedule() const
 {
 	return schedule;
 }
-// addCourse �Լ��� ����  
+// addCourse 함수의 정의  
 void Student::addCourse(string name)
 {
 	schedule->addCourse(name);
 }
-// print �Լ��� ����
+// print 함수의 정의
 void Student::print() const
 {
-	cout << "�л� �̸�: " << name << endl;
+	cout << "학생 이름: " << name << endl;
 	schedule->print();
 }

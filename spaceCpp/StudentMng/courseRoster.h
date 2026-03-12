@@ -1,5 +1,5 @@
 /**************************************************************
- * CourseRoster Å¬·¡½ºÀÇ ÀÎÅÍÆäÀÌ½º ÆÄÀÏ                      *
+ * CourseRoster í´ë˜ìŠ¤ì˜ ì¸í„°í˜ì´ìŠ¤ íŒŒì¼                      *
  **************************************************************/
 #ifndef COURSEROSTER_H
 #define COURSEROSTER_H
@@ -8,7 +8,7 @@
 #include <cassert> 
 using namespace std;
 
-// Å¬·¡½º Á¤ÀÇ
+// í´ë˜ìŠ¤ ì •ì˜
 class CourseRoster
 {
 private:

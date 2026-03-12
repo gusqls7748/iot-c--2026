@@ -404,15 +404,29 @@ C++은 강력한 표준 라이브러리를 통해 수학, 문자 처리, 난수 
 
 - 시스템 구성 파일:
 
-학생 관리: student.h, student.cpp, studentSchedule.h, studentSchedule.cpp
+학생 관리: 
+[소스](./spaceCpp/StudentMng/student.h), 
+[소스](./spaceCpp/StudentMng/student.cpp), 
+[소스](./spaceCpp/StudentMng/studentSchedule.h),
+[소스](./spaceCpp/StudentMng/studentSchedule.cpp)
 
-과목 관리: course.h, course.cpp, courseRoster.h, courseRoster.cpp
+과목 관리: 
+[소스](./spaceCpp/StudentMng/course.h), 
+[소스](./spaceCpp/StudentMng/course.cpp), 
+[소스](./spaceCpp/StudentMng/courseRoster.h), 
+[소스](./spaceCpp/StudentMng/courseRoster.cpp)
 
-수강 등록 제어: registrar.h, registrar.cpp
+수강 등록 제어: 
+[소스](./spaceCpp/StudentMng/registrar.h), 
+[소스](./spaceCpp/StudentMng/registrar.cpp)
 
-실행부: app.cpp (전체 시스템 인스턴스화 및 테스트)
+실행부: (전체 시스템 인스턴스화 및 테스트)
+[소스](./spaceCpp/StudentMng/app.cpp)
 
 ## 8일차 ##
-- 
+
+- 벡터(vector)
+
+
 
 

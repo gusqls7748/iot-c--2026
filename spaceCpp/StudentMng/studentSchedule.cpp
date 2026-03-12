@@ -1,29 +1,29 @@
 /**************************************************************
- * StudentSchedule Å¬·¡½ºÀÇ ±¸Çö ÆÄÀÏ                         *
+ * StudentSchedule í´ë˜ìŠ¤ì˜ êµ¬í˜„ íŒŒì¼                         *
  **************************************************************/
 #include "studentSchedule.h"
 
- // »ı¼ºÀÚ
+ // ìƒì„±ì
 StudentSchedule::StudentSchedule()
     :size(0)
 {
     courseNames = new string[5];
 }
-// ¼Ò¸êÀÚ
+// ì†Œë©¸ì
 StudentSchedule::~StudentSchedule()
 {
     delete[] courseNames;
 }
-// addCourse ÇÔ¼öÀÇ Á¤ÀÇ
+// addCourse í•¨ìˆ˜ì˜ ì •ì˜
 void StudentSchedule::addCourse(string name)
 {
     courseNames[size] = name;
     size++;
 }
-// print ÇÔ¼öÀÇ Á¤ÀÇ
+// print í•¨ìˆ˜ì˜ ì •ì˜
 void StudentSchedule::print() const
 {
-    cout << "¼ö°­ °ú¸ñ ¸ñ·Ï" << endl;
+    cout << "ìˆ˜ê°• ê³¼ëª© ëª©ë¡" << endl;
     for (int i = 0; i < size; i++)
     {
         cout << courseNames[i] << endl;

@@ -1,5 +1,5 @@
 /**************************************************************
- * StudentSchedule Å¬·¡½ºÀÇ ÀÎÅÍÆäÀÌ½º ÆÄÀÏ                   *
+ * StudentSchedule í´ë˜ìŠ¤ì˜ ì¸í„°í˜ì´ìŠ¤ íŒŒì¼                   *
  **************************************************************/
 #ifndef STUDENTSCHEDULE_H
 #define STUDENTSCHEDULE_H
@@ -8,7 +8,7 @@
 #include <cassert> 
 using namespace std;
 
-// Å¬·¡½º Á¤ÀÇ
+// í´ë˜ìŠ¤ ì •ì˜
 class StudentSchedule
 {
 private:

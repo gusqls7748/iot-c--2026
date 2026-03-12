@@ -1,17 +1,17 @@
 /**************************************************************
- * Registrar Å¬·¡½ºÀÇ ±¸Çö ÆÄÀÏ                               *
+ * Registrar í´ë˜ìŠ¤ì˜ êµ¬í˜„ íŒŒì¼                               *
  **************************************************************/
 #include "registrar.h"
 
- // »ı¼ºÀÚ
+ // ìƒì„±ì
 Registrar::Registrar()
 {
 }
-// ¼Ò¸êÀÚ
+// ì†Œë©¸ì
 Registrar::~Registrar()
 {
 }
-// enroll ÇÔ¼ö
+// enroll í•¨ìˆ˜
 void Registrar::enroll(Student student, Course course)
 {
 	(course.getRoster())->addStudent(student.getName());
