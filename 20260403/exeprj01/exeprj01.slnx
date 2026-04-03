@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="exeprj/exeprj.vcxproj" Id="edd8b6c8-9363-4fa4-ae06-fe5b2a4371ea" />
+</Solution>
