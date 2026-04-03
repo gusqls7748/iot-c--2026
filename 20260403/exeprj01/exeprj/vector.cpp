@@ -20,14 +20,15 @@ int main() {
 
 	//cout << "v[0]: " << v[0] << endl;
 
-	for (auto i : v2) {
-		//cout << i << endl;
+	for (auto i : v2) {				// 범위기반 for문
+		//cout << i << endl;		// i는 인덱스가 아닌다. 요소값들을 차례로 저장하는 변수다.
 		cout << i << endl;
-		cout << v2[i] << endl;
+		//cout << v2[i] << endl;
 		cout << endl;
 	}
 
-
+	cout << "v2의 첫번쨰 요소값: " << *v2.begin() << endl;
+	cout << "v2의 마지막 요소값: " << *(v2.end() - 1) << endl;
 
 	return 0;
 
