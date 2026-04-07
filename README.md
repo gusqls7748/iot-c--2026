@@ -594,3 +594,11 @@ for (auto riter = v.rbegin(); riter != v.rend(); riter++) {
 
 - [소스](./20260406/vector03/vectorstudy/map.cpp)
 
+## 2026 - 04 - 07 (화)
+
+### 스마트포인터(smartpointer)
+- 스마트 포인터는 메모리 누수(Memory Leak)를 방지하기 위해 객체의 수명 주기를 자동으로 관리하는 클래스 템플릿입니다. 핵심은 **"스택(Stack)의 자동 반환 기능을 힙(Heap) 메모리에 적용"**하는 것입니다.
+
+
+
+### 스레드(thread)

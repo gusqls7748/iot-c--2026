@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="vectorstudy/vectorstudy.vcxproj" Id="d8b527a9-3a6c-4d50-b85b-879fdce4a57e" />
+  <Project Path="smartpointer/smartpointer.vcxproj" />
 </Solution>
